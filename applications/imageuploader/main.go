@@ -93,8 +93,7 @@ func main() {
 	app := r2router.NewSeeforRouter()
 
 	for _, endpoint := range conf.Endpoints {
-
-		go func(endpoint *EndpointConfig) {
+		func(endpoint *EndpointConfig) {
 			u := uploader.NewUploader(GetStorage(endpoint.Storage))
 			handler := uploader.NewHandler(u)
 

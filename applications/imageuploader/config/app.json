@@ -1,0 +1,15 @@
+{
+	"Host": "127.0.0.1",
+	"Port": 8080,
+	"Endpoints": [{
+		"Endpoint": "/mongodb",
+		"FileField": "image",
+		"Storage": {
+			"Type": "mongodb",
+			"Configurations": {
+				"url": "localhost:27017/imagescaler",
+				"prefix": "images"
+			}
+		}
+	}]
+}

@@ -1,6 +1,0 @@
-package imageuploader
-
-import (
-
-)
-
